@@ -3,36 +3,61 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+<div class="container">
+  <div id="buho-item">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="79px" viewBox="0 0 70.5 78.8" style="enable-background:new 0 0 70.5 78.8;" xml:space="preserve">
+      <path class="hidden" style="fill:#58585A;" d="M58.85,73.85L58.85,73.85l0-46.16H5.52V73.9l0,0c-0.02,0.76,0,3.44,0,3.44
+        c2.04-0.4,3.13-1.54,3.69-2.52c0.11-0.19,0.2-0.38,0.28-0.56c0.08,0.19,0.17,0.37,0.28,0.56c0.71,1.22,2.21,2.67,5.35,2.67
+        s8.12,0,11.26,0c3.14,0,4.64-1.46,5.35-2.67c0.11-0.19,0.2-0.38,0.28-0.56c0.08,0.19,0.17,0.37,0.28,0.56
+        c0.71,1.22,2.21,2.67,5.35,2.67c3.14,0,8.12,0,11.26,0c3.14,0,4.64-1.46,5.35-2.67c0.11-0.19,0.2-0.38,0.28-0.56
+        c0.08,0.19,1.21,3.22,4.32,3.23C58.85,77.49,58.84,74.2,58.85,73.85z"/>
+      <path class="hidden" style="fill:#1A171B;" d="M18.65,64.45c3.03-4.93,3.94-11.07,4.21-14.49C9.51,50.37,5.52,43.21,5.52,43.21v32.56
+        C5.52,75.78,14.19,71.72,18.65,64.45z"/>
+      <path class="hidden" style="fill:#1A171B;" d="M45.72,64.45c-4.46-7.27-4.33-17.13-4.33-17.13h17.46v28.46C58.85,75.78,50.17,71.72,45.72,64.45z"/>
+      <g>
+        
+          
+        <path  style="fill:#1A171B;" d="M62.24,22.28c-0.53,0.25-1.07,0.55-1.61,0.88L23.11,9.73c-0.21-0.59-0.44-1.17-0.69-1.7
+          c-1.23-2.59-3.8-5.78-3.8-5.78l-1.86,5.21l-1.38,3.84l-1.23,3.45l8.58,26.04l6.54,10.86l12.21-4.42l22.04-12.14l2.09-5.84
+          l1.37-3.84l1.86-5.21C68.84,20.22,64.83,21.06,62.24,22.28z"/>
+        <g>
+          <circle cx="20.11" cy="27.9" r="17.8"/>
+          <path style="fill:#FFFFFF;" d="M34.04,32.88c-2.75,7.69-11.22,11.7-18.92,8.95c-7.7-2.75-11.7-11.23-8.95-18.92
+            c2.75-7.69,11.22-11.7,18.92-8.95C32.79,16.71,36.8,25.18,34.04,32.88z"/>
+          <path style="fill:#FFFFFF;" d="M31.92,32.12c-2.34,6.53-9.52,9.93-16.04,7.59c-6.52-2.33-9.92-9.52-7.59-16.04
+            c2.33-6.53,9.52-9.93,16.05-7.59C30.86,18.41,34.26,25.59,31.92,32.12z"/>
+          <path d="M26.79,30.28c-1.32,3.69-5.38,5.61-9.07,4.29c-3.69-1.33-5.61-5.39-4.29-9.08c1.32-3.68,5.38-5.6,9.07-4.28
+            C26.19,22.54,28.11,26.6,26.79,30.28z"/>
+        </g>
+        <g>
+          <circle cx="50.4" cy="41.4" r="15.06"/>
+          <path style="fill:#FFFFFF;" d="M62.2,45.62c-2.33,6.51-9.5,9.9-16.01,7.57c-6.52-2.33-9.91-9.5-7.58-16.01
+            c2.33-6.51,9.5-9.9,16.01-7.57C61.14,31.94,64.53,39.1,62.2,45.62z"/>
+          <path style="fill:#FFFFFF;" d="M60.4,44.98c-1.97,5.53-8.05,8.4-13.57,6.42c-5.52-1.98-8.4-8.06-6.42-13.58
+            c1.98-5.52,8.06-8.4,13.58-6.42C59.5,33.38,62.38,39.46,60.4,44.98z"/>
+          <path d="M57,43.76c-1.31,3.64-5.32,5.55-8.96,4.24c-3.66-1.31-5.54-5.32-4.23-8.96c1.3-3.65,5.3-5.55,8.96-4.24
+            C56.41,36.1,58.31,40.11,57,43.76z"/>
+        </g>
+      </g>
+      <rect class="hidden" x="17.19" y="75.84" style="fill:#1A171B;" width="7.06" height="2.96"/>
+      <rect class="hidden" x="39.8" y="75.84" style="fill:#1A171B;" width="7.07" height="2.96"/>
+      </svg>
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div id="main-section" class="centered">
+  <div id="text-section">
+    <h1 ng-model ="current">Web {[{current}]}</span></h1>
+    <p>I’m Tom Sarduy, a web developer based in Havana with a 25 Kb/s internet connection. When I’m not developing a new feature for an awesome product I'm probably on StackOverflow.</p>
+    <p>Due to minimalism design decisions, my portfolio is on the console log <br> (<kbd><kbd class="kbd" ng-bind="commands[0]"></kbd> + <kbd class="kbd" ng-bind="commands[1]"></kbd> + <kbd class="kbd">J</kbd></kbd>)</p>
+    <ul class="social-icons">
+      <li><a rel="nofollow" href="http://stackoverflow.com/users/670377/tom-sarduy"><i class="fa fa-stack-overflow"></i></a></li>
+      <li><a rel="nofollow" href="https://github.com/tomsarduy"><i class="fa fa-github"></i></a></li>
+      <li><a rel="nofollow" href="http://jsfiddle.net/tomsarduy/"><i class="fa fa-jsfiddle"></i></a></li>
+      <li><a rel="nofollow" href="http://codepen.io/tomsarduy/"><i class="fa fa-codepen"></i></a></li>
+      <li><a rel="nofollow" href="https://www.linkedin.com/in/tomsarduy"><i class="fa fa-linkedin"></i></a></li>
+      <li><a rel="nofollow" href="https://twitter.com/tomsarduy"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
 </div>
-

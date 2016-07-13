@@ -1,0 +1,212 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+body,html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Code Pro',sans-serif
+}
+
+#main-section {
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+@media only screen and (min-width: 768px) {
+
+    #main-section {
+        width: 461px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%)
+    }
+
+    #buho-item {
+        float: left;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        width: 55px
+    }
+
+    .container {
+        max-width: 1280px
+    }
+}
+
+.caret,.container {
+    position: relative
+}
+
+#buho-item img {
+    width: 100%
+}
+
+.caret {
+    font-size: 40px;
+    width: 14px;
+    height: 6px;
+    display: inline-block;
+    font-family: sans-serif;
+    left: -21px;
+    top: 5px
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite
+}
+
+@keyframes blink {
+    from,to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: #000
+    }
+}
+
+@-moz-keyframes blink {
+    from,to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: #000
+    }
+}
+
+@-webkit-keyframes blink {
+    from,to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: #000
+    }
+}
+
+@-ms-keyframes "blink" {
+    from,to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: #000
+    }
+}
+
+@-o-keyframes blink {
+    from,to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: #000
+    }
+}
+
+.hidden {
+    display: none
+}
+
+.container {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center
+}
+
+#text-section {
+    max-width: 415px;
+    margin: 0 auto
+}
+
+#text-section h4 {
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: grey
+}
+
+.kbd,.social-icons li a {
+    color: #333
+}
+
+#text-section h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-top: -5px
+}
+
+@media only screen and (min-width: 768px) {
+    #text-section {
+        width:411px;
+        float: left
+    }
+
+    #text-section h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 46px
+    }
+}
+
+#text-section p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.4
+}
+
+.social-icons {
+    padding: 0;
+    margin-top: 30px
+}
+
+.social-icons li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 22px
+}
+
+@media only screen and (min-width: 768px) {
+    .social-icons {
+        margin-top:16px
+    }
+
+    .social-icons li {
+        padding: 10px
+    }
+}
+
+.social-icons li:first-of-type {
+    padding-left: 0
+}
+
+.kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    display: inline-block;
+    padding: .1em .6em;
+    margin: 0 .1em;
+    white-space: nowrap;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 0 2px #fff inset;
+    border-radius: 3px
+}

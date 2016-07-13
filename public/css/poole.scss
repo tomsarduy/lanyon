@@ -1,3 +1,8 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+
 /*
  *                        ___
  *                       /\_ \
@@ -45,6 +50,17 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+.border{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  border: 6px solid #333;
+  z-index: -1;
 }
 
 html {
@@ -154,7 +170,7 @@ pre {
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
+  font-size: 14px;
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
@@ -428,3 +444,25 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+// Add your styles here
+#plugin-page{
+  font-size: 16px;
+  pre,code{
+    font-size: 14px;
+  }
+  ul{
+    margin-bottom: 0;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    li{
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 20px;
+    }
+  }
+}
+
+
